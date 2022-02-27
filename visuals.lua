@@ -6,8 +6,8 @@ local Lowfi = {
     Distance = false,
     DistanceColor = Color3.fromRGB(255, 255, 255),
     Cham = false,
-    ChamColor1 = Color3.fromRGB(0, 0, 0),
-    ChamColor2 = Color3.fromRGB(255, 255, 255),
+    ChamColor1 = Color3.fromRGB(255, 255, 255),
+    ChamColor2 = Color3.fromRGB(0, 0, 0),
     Thickness = 1,
     Objects = setmetatable({}, {__mode = "kv"})
 }
