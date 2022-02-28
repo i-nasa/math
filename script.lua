@@ -1,7 +1,23 @@
 -- What's in the future?
+
+wait(1)
+game.StarterGui:SetCore("SendNotification", {
+        Title = "SpaceWare";
+        Text = "Status: Waiting for game";
+        Duration = 1;
+})
+
 repeat
     wait()
 until game:IsLoaded()
+
+wait(1)
+game.StarterGui:SetCore("SendNotification", {
+        Title = "SpaceWare";
+        Text = "Status: Returning arguments";
+        Duration = 1;
+})
+
 local gm = getrawmetatable(game)
 setreadonly(gm, false)
 local namecall = gm.__namecall
@@ -19,6 +35,14 @@ gm.__namecall =
         end
         return namecall(self, unpack(args))
     end)
+
+wait(1)
+game.StarterGui:SetCore("SendNotification", {
+        Title = "SpaceWare";
+        Text = "Status: Fetching data from server";
+        Duration = 1;
+})
+
 -- // Dependencies
 local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/cclockworkks/math/main/silent.lua"))()
 Aiming.TeamCheck(false)
@@ -122,6 +146,20 @@ RunService:BindToRenderStep("AimLock", 0, function()
         end
     end
 end)
+
+wait(1)
+game.StarterGui:SetCore("SendNotification", {
+        Title = "SpaceWare";
+        Text = "Status: Ready to launch";
+        Duration = 1;
+})
+
+wait(1)
+game.StarterGui:SetCore("SendNotification", {
+        Title = "SpaceWare";
+        Text = "Status: Launching";
+        Duration = 1;
+})
 
 -- This file was generated using Luraph Obfuscator v13.4.4
 
